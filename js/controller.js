@@ -54,3 +54,18 @@ function hienThiThongTin(nv) {
   document.getElementById("chucvu").value = nv.chucVu;
   document.getElementById("gioLam").value = nv.giolam;
 }
+
+// ham hien thi popup
+
+function showModal(nv) {
+  $("#myModal #tknv").val(nv["tk"]);
+  $("#myModal #tknv").attr("readonly", true);
+  $("#myModal #name").val(nv["name"]);
+  $("#myModal #email").val(nv["email"]);
+  $("#myModal #datepicker").val(nv["ngayLam"]);
+  $("#myModal #luongCB").val(nv["luongCb"]);
+  $("#myModal #chucvu").val(nv["chucVu"]);
+  $("#myModal #gioLam").val(nv["gioLam"]);
+
+  $("#myModal").modal("show");
+}

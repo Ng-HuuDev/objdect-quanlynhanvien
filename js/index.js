@@ -61,9 +61,7 @@ function suaNV(id) {
   var index = DSNV.findIndex(function (item) {
     return item.tk == id;
   });
-
+  // hienThiThongTin(nv);
   var nv = DSNV[index];
-
-  // hien thi thong tin tren form
-  hienThiThongTin(nv);
+  showModal(nv);
 }
